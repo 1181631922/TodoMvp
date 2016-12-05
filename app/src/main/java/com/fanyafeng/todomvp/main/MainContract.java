@@ -20,6 +20,6 @@ public interface MainContract {
     }
 
     interface Presenter extends BasePresenter {
-        void startPutaoActivity(Context context);
+        void startPutaoActivity();
     }
 }

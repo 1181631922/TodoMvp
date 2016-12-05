@@ -31,7 +31,7 @@ public class MainActivity extends BaseActivity implements MainContract.View {
 //这里默认使用的是toolbar的左上角标题，如果需要使用的标题为中心的采用下方注释的代码，将此注释掉即可
         title = getString(R.string.title_activity_main);
         isSetNavigationIcon = false;
-        mainPresenter = new MainPresenter(this);
+        mainPresenter = new MainPresenter(this, this);
 
         initView();
         mainPresenter.start();
@@ -54,7 +54,7 @@ public class MainActivity extends BaseActivity implements MainContract.View {
         super.onClick(v);
         switch (v.getId()) {
             case R.id.btnPuTao:
-                mainPresenter.startPutaoActivity(this);
+                mainPresenter.startPutaoActivity();
                 break;
         }
     }

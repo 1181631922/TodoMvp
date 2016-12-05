@@ -11,10 +11,11 @@ import com.fanyafeng.todomvp.putao.PutaoActivity;
  * Email: fanyafeng@live.cn
  */
 public class MainPresenter implements MainContract.Presenter {
-
+    private Context context;
     private MainContract.View mView;
 
-    public MainPresenter(MainContract.View mView) {
+    public MainPresenter(Context context, MainContract.View mView) {
+        this.context = context;
         this.mView = mView;
     }
 
@@ -25,7 +26,7 @@ public class MainPresenter implements MainContract.Presenter {
 
 
     @Override
-    public void startPutaoActivity(Context context) {
+    public void startPutaoActivity() {
         Intent intent = new Intent(context, PutaoActivity.class);
         mView.startPutaoActivity(intent);
     }
