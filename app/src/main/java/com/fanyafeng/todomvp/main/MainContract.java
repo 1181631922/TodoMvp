@@ -12,7 +12,7 @@ import com.fanyafeng.todomvp.BaseView;
  * Email: fanyafeng@live.cn
  */
 public interface MainContract {
-    interface View extends BaseView<Presenter> {
+    interface View {
 
         void startPutaoActivity(Intent intent);
 

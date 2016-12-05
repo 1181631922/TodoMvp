@@ -16,13 +16,7 @@ import com.fanyafeng.todomvp.putao.PutaoActivity;
 //需要搭配baseactivity，这里默认为baseactivity,并且默认Baseactivity为包名的根目录
 public class MainActivity extends BaseActivity implements MainContract.View {
     private Button btnPuTao;
-    private MainContract.Presenter mPresenter;
     private MainPresenter mainPresenter;
-
-    @Override
-    public void setPresenter(MainContract.Presenter presenter) {
-        mPresenter = presenter;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
