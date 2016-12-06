@@ -24,4 +24,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
+    compile 'com.facebook.fresco:fresco:0.14.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'com.huxq17.xrefreshview:xrefreshview:3.5.5'
 }

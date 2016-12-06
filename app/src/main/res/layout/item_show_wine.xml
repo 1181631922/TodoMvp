@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutShowWine"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="10dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_show_wine_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.43dp"
+        android:layout_below="@+id/sdv_show_wine_view"
+        android:background="#e4e4e4" />
+
+    <TextView
+        android:id="@+id/tv_show_wine_cnname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="法国拉菲干红 1982"
+        android:textSize="12.82dp" />
+
+    <TextView
+        android:id="@+id/tv_show_wine_enname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_show_wine_cnname"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Frabce Lafite wine"
+        android:textSize="12.82dp" />
+
+    <TextView
+        android:id="@+id/tv_show_wine_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_show_wine_enname"
+        android:layout_marginLeft="16dp"
+        android:text="¥3500"
+        android:textSize="12.82dp" />
+
+    <TextView
+        android:id="@+id/tv_show_wine_realprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_show_wine_price"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/tv_show_wine_price"
+        android:gravity="bottom"
+        android:includeFontPadding="false"
+        android:text="¥5800"
+        android:textSize="10.26dp" />
+
+    <TextView
+        android:id="@+id/tv_show_number_state"
+        android:layout_width="42.74dp"
+        android:layout_height="12.82dp"
+        android:layout_alignBottom="@+id/tv_show_wine_price"
+        android:layout_below="@+id/tv_show_wine_enname"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/tv_show_wine_realprice"
+        android:gravity="center|center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="9.4dp" />
+
+    <ImageView
+        android:id="@+id/wineState"
+        android:layout_width="26.72dp"
+        android:layout_height="36.32dp" />
+
+    <ImageView
+        android:id="@+id/wineCollect"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerInside" />
+</RelativeLayout>
