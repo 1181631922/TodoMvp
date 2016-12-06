@@ -16,10 +16,14 @@ public interface MainContract {
 
         void startPutaoActivity(Intent intent);
 
+        void startHomeActivity(Intent intent);
+
         void setPutaoText();
     }
 
     interface Presenter extends BasePresenter {
         void startPutaoActivity();
+
+        void startHomeActivity();
     }
 }

@@ -16,6 +16,7 @@ import com.fanyafeng.todomvp.putao.PutaoActivity;
 //需要搭配baseactivity，这里默认为baseactivity,并且默认Baseactivity为包名的根目录
 public class MainActivity extends BaseActivity implements MainContract.View {
     private Button btnPuTao;
+    private Button btnHome;
     private MainPresenter mainPresenter;
 
     @Override
@@ -36,6 +37,7 @@ public class MainActivity extends BaseActivity implements MainContract.View {
     //初始化UI空间
     private void initView() {
         btnPuTao = (Button) findViewById(R.id.btnPuTao);
+        btnHome = (Button) findViewById(R.id.btnHome);
     }
 
     //初始化数据
@@ -49,6 +51,9 @@ public class MainActivity extends BaseActivity implements MainContract.View {
         switch (v.getId()) {
             case R.id.btnPuTao:
                 mainPresenter.startPutaoActivity();
+                break;
+            case R.id.btnHome:
+                mainPresenter.startHomeActivity();
                 break;
         }
     }
@@ -64,5 +69,8 @@ public class MainActivity extends BaseActivity implements MainContract.View {
         startActivity(intent);
     }
 
-
+    @Override
+    public void startHomeActivity(Intent intent) {
+        startActivity(intent);
+    }
 }

@@ -3,6 +3,7 @@ package com.fanyafeng.todomvp.main;
 import android.content.Context;
 import android.content.Intent;
 
+import com.fanyafeng.todomvp.home.HomeActivity;
 import com.fanyafeng.todomvp.putao.PutaoActivity;
 
 /**
@@ -24,10 +25,15 @@ public class MainPresenter implements MainContract.Presenter {
         mView.setPutaoText();
     }
 
-
     @Override
     public void startPutaoActivity() {
         Intent intent = new Intent(context, PutaoActivity.class);
+        mView.startPutaoActivity(intent);
+    }
+
+    @Override
+    public void startHomeActivity() {
+        Intent intent = new Intent(context, HomeActivity.class);
         mView.startPutaoActivity(intent);
     }
 }

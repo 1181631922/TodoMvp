@@ -57,7 +57,7 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
             }
             if (isSetNavigationIcon) {
 //                由于要兼容低版本，所以采用这个划杠的方法，需要自己根据需求替换图片
-                toolbar.setNavigationIcon(getResources().getDrawable(R.mipmap.ic_launcher));
+                toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_menu_back));
                 toolbar.setNavigationOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
