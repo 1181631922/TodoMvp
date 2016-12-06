@@ -5,7 +5,7 @@
 # 我的csdn
 　　1.[第一篇文章](http://blog.csdn.net/qq_23195583/article/details/53468577)<p>
 　　2.[第二篇文章](http://blog.csdn.net/qq_23195583/article/details/53487429)<p>
-　　3.待续。。。
+　　+ 待续。。。
 
 ## Gif图片示例所有功能正常
 ![示例](https://github.com/1181631922/TodoMvp/blob/master/screenshots/mvp.gif)
