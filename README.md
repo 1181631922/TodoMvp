@@ -2,6 +2,7 @@
 [hongyang的csdn](http://blog.csdn.net/lmj623565791/article/details/46596109)
 # TodoMvp
 根据谷歌规范编写mvp<p>[谷歌的项目地址](https://github.com/googlesamples/android-architecture)
+
 # 我的csdn
 * 第一篇文章主要讲了一下谷歌todo是如何对mvp项目进行拆分的，以及遇到的一些困惑
 * 第二篇文章主要是根据经常用的activity进行mvp的分解，其中还包括常用的列表等，如何进行包名的拆分
